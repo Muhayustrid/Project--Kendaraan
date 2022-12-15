@@ -1,0 +1,12 @@
+import xlrd
+buka = xlrd.open_workbook('kendaraaan.xls') 
+bukasheet = buka.sheet_by_index(0) 
+cell = bukasheet.cell_value(0, 0) 
+semuabaris = bukasheet.row_values(0)
+semuakolom = bukasheet.col_values(0)
+jumlahkolom = bukasheet.ncols 
+jumlahbaris = bukasheet.nrows 
+
+print(bukasheet.cell_value(0, 0))
+print(bukasheet.row_values(12))
+print(bukasheet.col_values(0))
