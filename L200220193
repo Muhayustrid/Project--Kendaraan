@@ -1,5 +1,5 @@
 import xlrd
-buka = xlrd.open_workbook("tugas.xls") #membuka file EXCEL
+buka = xlrd.open_workbook("jumlah.xls") #membuka file EXCEL
 bukasheet = buka.sheet_by_index(0) #membuka sheet pertama
 cell = bukasheet.cell_value(0, 0) #mengambil nilai dari cell
 semuabaris = bukasheet.row_values(0)#mengambil semua nilai dalam satu baris sekaligus
